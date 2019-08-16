@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+bower_components
+/coverage
+*.log
+.idea
+.vscode
+.eslintcache
+package-lock.json
+
+/lib                        # 把 lib 排除在外
+/packages/*/lib  
