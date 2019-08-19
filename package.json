@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "ava test/test.js"
+    "test": "ava test/schedule.js"
   },
   "author": "fan.zhang",
   "license": "ISC",

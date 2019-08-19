@@ -1,32 +1,30 @@
 export function Schedule() {
     this.tasks = [];
     this.max = 2;
-    this.isRunng = false;
+    setTimeout(() => {
+        this.run();
+    }, 0)
 }
 
 Schedule.prototype.addTask = function (task) {
     this.tasks.push(task);
-    if (!this.isRunng) {
-        this.isRunng = true;
-        this.run();
-    }
+
 }
 
 Schedule.prototype.run = function () {
     if (this.tasks.length === 0) {
-        this.isRunng = false;
         return;
     }
-    let size = this.max;
+    let size = Math.min(this.max, this.tasks.length);
     for (let i = 0; i < size; i++) {
         let task = this.tasks.shift();
         this.max--;
-        task.then((res) => {
-            this.run();
+        task().then((res) => {
             this.max++;
+            this.run();
         }).catch((err) => {
-            this.run();
             this.max++;
+            this.run();
         })
     }
 }
