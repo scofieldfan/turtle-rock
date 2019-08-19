@@ -58,8 +58,26 @@ const util = {
         }
 
     },
-    flatten() {
+    flatten(array) {
 
+        /*[2,3,[2]] */
+        /* [[3,4,5],[2,3],[[3,4],6]] */
+        function helper(ary) {
+            let ret = [];
+            if (Object.prototype.toString.call(array).slice(8, -1) === "Array") {
+                ary.forEach((item) => {
+                    if (Object.prototype.toString.call(item).slice(8, -1) === "Array") {
+                        ret = ret.concat(helper(item));
+                    } else {
+                        ret.push(item);
+                    }
+                })
+            } else {
+                ret.push(ary);
+            }
+            return ret;
+        }
+        return helper(array);
     },
     retryAjax(retryTimes) {
 
