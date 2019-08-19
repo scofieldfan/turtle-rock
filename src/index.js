@@ -58,6 +58,22 @@ const util = {
         }
 
     },
+    currying(fun) {
+
+        function helper(fn, ...arg1) {
+            let length = fn.length;
+            let self = this;
+            return function (...arg2) {
+                let arg = arg1.concat(arg2);
+                if (arg.length < length) {
+                    return helper.call(self, fn, ...arg);
+                }
+                return fn.apply(this, arg);
+            }
+        }
+        return helper(fun);
+
+    },
     flatten(array) {
 
         /*[2,3,[2]] */

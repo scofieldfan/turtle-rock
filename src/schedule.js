@@ -4,7 +4,7 @@ export function Schedule() {
     this.isRunng = false;
 }
 
-Schedule.prototype.addTask = (task) => {
+Schedule.prototype.addTask = function (task) {
     this.tasks.push(task);
     if (!this.isRunng) {
         this.isRunng = true;
@@ -12,7 +12,7 @@ Schedule.prototype.addTask = (task) => {
     }
 }
 
-Schedule.prototype.run = () => {
+Schedule.prototype.run = function () {
     if (this.tasks.length === 0) {
         this.isRunng = false;
         return;

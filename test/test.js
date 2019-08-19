@@ -29,6 +29,18 @@ test('flattern3', t => {
     t.deepEqual(result, [1, 2, 3, 5, 6, 7, 8, 9, 10]);
 });
 
+test('curry1', t => {
+    function add(a, b) {
+        return a + b;
+    }
+    let curryadd = util.currying(add);
+    let add1 = curryadd(1);
+
+    t.is(add1(2), 3);
+    t.is(add1(5), 6);
+    t.is(add1(6), 7);
+});
+
 
 test('test3', async t => {
     const bar = Promise.resolve('bar');
