@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
-    "test": "ava test/util.js"
+    "build": "rollup -c -w",
+    "test": "ava test/polyfill.js"
   },
   "author": "fan.zhang",
   "license": "ISC",
