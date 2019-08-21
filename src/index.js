@@ -7,7 +7,7 @@ const util = {
                 clearTimeout(timer);
             } else {
                 timer = setTimeout(() => {
-                    return fun.apply(this, args);
+                    fun.apply(this, args);
                 }, delay);
             }
         }
@@ -95,21 +95,40 @@ const util = {
         }
         return helper(array);
     },
-    retryAjax(retryTimes) {
+    timer(minute, second) {
+
+
+        let timer = setInterval(() => {
+            if (minute === 0 && second === 0) {
+                clearInterval(timer);
+            } else {
+                if (second <= 0) {
+                    second = 60;
+                    minute--;
+                }
+                second--;
+                console.log(`${minute}:${second}`);
+            }
+
+        }, 1000);
+    },
+    formatNumber(number) {
+        if (typeof number !== "number") {
+            return false;
+        }
+        if (!isNaN(number)) {
+            return;
+        }
+        let result = [];
+        while (number != 0) {
+            result.unshift(number % 1000);
+            number = Math.floor(number / 1000);
+        }
+        return result.join(",");
 
     }
+
 }
 export {
     util
 }
-// Function.prototype.bind = (context) => {
-//     const self = this;
-//     let args = [].slice.call(1, arguments);
-//     function newbind(...args2) {
-//         return self.apply(this instanceof newbind ? this : context, args.concat(args2));
-//     }
-//     function nop() { }
-//     nop.prototype = this.prototype;
-//     newbind.prototype = new nop();
-//     return newbind;
-// }

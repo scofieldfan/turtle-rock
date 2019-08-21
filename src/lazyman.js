@@ -1,4 +1,4 @@
-function LazyMan(name) {
+export function LazyMan(name) {
     return new LazyManFactory(name);
 }
 
@@ -21,7 +21,6 @@ LazyManFactory.prototype.eat = function (sth) {
         console.log(this.name, ' eat dinner');
         this.next();
     });
-
     return this;
 }
 LazyManFactory.prototype.next = function () {
