@@ -62,6 +62,28 @@ const request = {
             xhr.send(params);
 
         })
+    },
+    cacheRequest(url, method = "get", params = {}) {
+        let key = url + method + JSON.stringify(params);
+        let cache = {};
+
+        function send() {
+            if (cache[key]) {
+                return Promise.resolve(cache[key]);
+            }
+            let request = new Request(url);
+            let init = {
+                method: method
+            }
+            return fetch(request, init).then((res) => {
+                cache[key] = res;
+                return res;
+            }).catch((error) => {
+                cache[key] = error;
+                return error;
+            })
+        }
+        return send;
     }
 }
 export {

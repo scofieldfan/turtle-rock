@@ -1,4 +1,4 @@
-Function.prototype.bind2 = (context) => {
+Function.prototype.bind2 = function (context) {
     const self = this;
     let args = [].slice.call(1, arguments);
     function newbind(...args2) {

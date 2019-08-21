@@ -114,17 +114,58 @@ const util = {
     },
     formatNumber(number) {
         if (typeof number !== "number") {
-            return false;
+            return null;
         }
-        if (!isNaN(number)) {
-            return;
+        if (isNaN(number)) {
+            return null;
         }
+
         let result = [];
-        while (number != 0) {
-            result.unshift(number % 1000);
-            number = Math.floor(number / 1000);
+        let tmp = number + "";
+        let num = number;
+        let suffix = "";
+        if (tmp.indexOf(".") !== -1) {
+            suffix = tmp.substring(tmp.indexOf(".") + 1);
+            num = parseInt(tmp.substring(0, tmp.indexOf(".")));
         }
-        return result.join(",");
+        while (num > 0) {
+            result.unshift(num % 1000);
+            num = Math.floor(num / 1000);
+        }
+        let ret = result.join(",");
+        if (suffix !== "") {
+            ret += "." + suffix;
+        }
+        return ret;
+    },
+    timeEscape(timestamp = 0) {
+        if (!timestamp || isNaN(timestamp)) {
+            return null;
+        }
+        const now = new Date().getTime();
+        const minute = 60 * 1000;
+        const hour = minute * 60;
+        const day = hour * 24;
+        const week = day * 7;
+        if (timestamp >= now) {
+            return "error";
+        }
+        if (timestamp >= now - minute) {
+            return "1分钟内"
+        }
+        if (timestamp >= now - hour) {
+            let m = Math.floor((now - timestamp) / minute);
+            return `${m}分钟前`;
+        }
+        if (timestamp >= now - day) {
+            let h = Math.floor((now - timestamp) / hour);
+            return `${h}小时前`;
+        }
+        if (timestamp >= now - week) {
+            let d = Math.floor((now - timestamp) / day);
+            return `${d}天前`;
+        }
+        return new Date(timestamp).toLocaleString();
 
     }
 
