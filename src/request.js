@@ -84,6 +84,23 @@ const request = {
             })
         }
         return send;
+    },
+    sendParallel(urls = [], max = 1) {
+
+        function helper(requests, num) {
+            let size = Math.min(requests.length, num);
+            for (let i = 0; i < size; i++) {
+                let url = requests.shift();
+                num--;
+                fetch(url).then((res) => {
+                    sendParallel(requests, num + 1);
+                }).catch((error) => {
+                    sendParallel(requests, num + 1);
+                })
+            }
+        }
+        helper(urls, max);
+
     }
 }
 export {
