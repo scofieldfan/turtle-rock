@@ -1,6 +1,7 @@
 import test from 'ava';
-import { util, EventBus, schedule } from '../lib/turtle.js';
+import { util } from '../lib/turtle.js';
 
+console.log(util);
 test('test', t => {
 
     function foo(arg) { console.log("arg:", arg); return arg };

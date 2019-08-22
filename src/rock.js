@@ -1,0 +1,6 @@
+const rock = {
+
+}
+export {
+    rock
+}
