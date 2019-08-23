@@ -36,7 +36,5 @@ MyPromise.prototype.then = function (onSuccess, onFail) {
         onFail(this.value);
     }
 
-
-
 }
 

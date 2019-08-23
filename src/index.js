@@ -50,7 +50,7 @@ const util = {
         return (...args) => {
             return new Promise((resolve, reject) => {
                 try {
-                    resolve(fun.apply(this, args));
+                    fun(...args, resolve);
                 } catch (e) {
                     reject(e);
                 }
