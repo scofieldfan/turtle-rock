@@ -95,9 +95,8 @@ const util = {
         }
         return helper(array);
     },
+
     timer(minute, second) {
-
-
         let timer = setInterval(() => {
             if (minute === 0 && second === 0) {
                 clearInterval(timer);
@@ -109,9 +108,9 @@ const util = {
                 second--;
                 console.log(`${minute}:${second}`);
             }
-
         }, 1000);
     },
+
     formatNumber(number) {
         if (typeof number !== "number") {
             return null;
