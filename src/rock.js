@@ -1,6 +1,0 @@
-const rock = {
-
-}
-export {
-    rock
-}
