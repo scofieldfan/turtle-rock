@@ -5,8 +5,7 @@
 </div>
 
 乌龟是一个动物，这个动物行动迟缓，但是寿命很长，不端努力，勇攀高峰。人生是一场马拉松，不到最后没有胜负，一时的落后说明不了什么。
-turtle 系列本着这个原则，复习所有相关领域的知识。慢就是快，不要着急。助你成为更好的自己！做一只快乐，积极，奋斗的小乌龟吧！
-
+turtle 系列本着这个原则，复习所有相关领域的知识。慢就是快，不要着急。助你成为更好的自己！做一只快乐，积极，奋斗的小乌龟吧!
 
 ### turtle-rock
 
@@ -21,8 +20,8 @@ turtle-rock 是前端一些小程序的集合，方便理解 JS 里的一些语�
 -   new 实现一个 new 函数
 -   deepclone（实现一个深度克隆）
 -   flattern(实现数组扁平)
--   promise（实现一个 promise）
--   用 xmlhttprequest 实现一个 promise 的 ajax
+-   promise（实现一个 promise)
+-   用 xmlhttprequest 实现一个 promise 的 ajax
 -   memolize （返回一个可存储函数结构的函数）
 -   promisy(将一个函数转化为 promise 的使用)
 -   curry （函数式编程柯里化）
@@ -35,7 +34,7 @@ turtle-rock 是前端一些小程序的集合，方便理解 JS 里的一些语�
 -   格式化数组数字
 -   series 流程控制，顺序执行两个 callback
 -   parallel 并行执行两个 callback
--   waterfall  串行执行有参数传递
+-   waterfall 串行执行有参数传递
 -   实现一个 JSON.parse
 -   实现双向绑定
 -   获取所有 dom 的元素节点
