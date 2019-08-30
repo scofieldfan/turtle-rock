@@ -1,21 +1,21 @@
 {
-  "name": "turtle-rock",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "rollup -c -w",
-    "test": "ava test/tree.js  --timeout=5s"
-  },
-  "author": "fan.zhang",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "ava": "^2.2.0",
-    "rollup": "^1.19.4",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-multi-entry": "^2.1.0",
-    "rollup-plugin-postcss": "^2.0.3"
-  }
+    "name": "turtle-rock",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "rollup -c -w",
+        "test": "ava test/flattern.js "
+    },
+    "author": "fan.zhang",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "ava": "^2.2.0",
+        "rollup": "^1.19.4",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-multi-entry": "^2.1.0",
+        "rollup-plugin-postcss": "^2.0.3"
+    }
 }
