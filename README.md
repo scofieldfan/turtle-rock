@@ -1,5 +1,44 @@
 # turtle 系列
 
+                                   j
+                          .WWL;;;WiDW
+                          #;,,,:;;;;W
+                          D E,,;; .;;W
+                          ;WW;,,W W;;W
+                          WK ii;DWKGtt
+                  ,KffK    Kt::KWWWi,t:
+                jWjtjtLKKW,:.....:WW,W;
+               KfEKitjffW;:.......:;,;K
+               Gjj;tfttDi,:::....:,,;;E
+              KftjWfK;jti;,:.::::,L,;ij
+              Wjttt,tjtEt;,::.::,,W;iiW
+              K;ti;;;ttjKi;,,:,,,;WiiK
+             tWttiDitEjjfKi;,,,,tK;DtW
+             ELtjjttjjtWjLKjiiiKKiiiiD
+             KLLLKtjKijfLLGGGDDDKii;;K
+             WfffGitLtjfEjLGGDEKWi;;iW
+             WfWjfftjfWLjLWKKDEWW;;;iW
+            KGLELLfLKLLLLKLGKWKD;;;;iW
+            WGLLLfLWLfGGKLEKKii;ii;iWE
+           KKGDDDKLLKGEWGWWtii;i;;itKW
+          WWEDGGjjLGWGWGWjiit;iiiiiKtWW
+         WWEDWDGLGjWGWDWLiEi;WWKKittttWWEL
+      WWWWEWEDDDjfDEWDDWttifD;;;iEWjtjDLf.
+      WWKEKKEEDWDDKWDDWttWGtitttiitWjjfWW
+       WKWKKKKEKKWEEKWftiEffjjLKKffWfjjji
+        KWKKKKWWEKKKWKttiWGGKLLGLGWKLjjjj
+        KWWKWWWWWWWWKft;itWGGGDDWtttitjjj
+         KWWWjiiWWKGDftiitiWjWDWtttiijjjW
+         Ktttii;ijKWDjtiijKWtjKKtKjttjjj
+         Kttiiii;iiWKEfttiijjK KfjfjjjjK
+          EtttttiGtGWWWfjjtjWfKfKjLjjjE
+           KWjttttGKK  WKKKfEW  WKKKW
+            WWWffjW       WLf.
+              KKLWW
+
+
+
+
 乌龟是一个动物，这个动物行动迟缓，但是寿命很长，不端努力，勇攀高峰。turtle 系列本着这个原则，复习所有相关领域的知识。慢就是快，不要着急。
 
 
