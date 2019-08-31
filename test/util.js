@@ -1,10 +1,8 @@
 import test from "ava";
 import { util } from "../lib/turtle.js";
 
-console.log(util);
-test("test", t => {
+test("debounce", t => {
     function foo(arg) {
-        console.log("arg:", arg);
         return arg;
     }
     const defoo = util.debounce(foo, 100);

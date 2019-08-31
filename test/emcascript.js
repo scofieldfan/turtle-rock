@@ -67,3 +67,33 @@ test("myExtends", t => {
     t.is(o.name, "hello");
     t.is(o.__proto__, C.prototype);
 });
+
+test("JSONStringify1", t => {
+    let obj = { a: 1 };
+    t.is(emca.JSONStringify(obj), '{"a":1}');
+});
+test("JSONStringify2", t => {
+    let obj = { a: 1, b: true, c: false, foo: null, bar: [1, 2, 3] };
+    t.is(
+        emca.JSONStringify(obj),
+        '{"a":1,"b":true,"c":false,"foo":null,"bar":[1,2,3]}'
+    );
+});
+test("JSONStringify3", t => {
+    let obj = { a: 1, bar: [1, 2, 3], o: { a: { c: 1 } } };
+    t.is(emca.JSONStringify(obj), '{"a":1,"bar":[1,2,3],"o":{"a":{"c":1}}}');
+});
+
+test("JSONParse", t => {
+    t.deepEqual(emca.JSONParse('{"a":1}'), { a: 1 });
+    t.deepEqual(emca.JSONParse('{"a":null,"c":{"d":1}}'), {
+        a: null,
+        c: { d: 1 }
+    });
+    t.deepEqual(emca.JSONParse('{"a":null,"foo":true,"bar":100,"c":{"d":1}}'), {
+        a: null,
+        foo: true,
+        bar: 100,
+        c: { d: 1 }
+    });
+});

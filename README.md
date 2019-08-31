@@ -30,7 +30,7 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 -   [flush 将数组乱序](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L16)
 -   [binarySearch 二分查找](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L24)
 -   [qsort 快速排序](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L42)
--   [twosum  两数之和](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L69)
+-   [twosum 两数之和](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L69)
 
 ### 语言特性
 
