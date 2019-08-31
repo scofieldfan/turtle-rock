@@ -50,22 +50,23 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 -   [debounce （防抖）](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L2)
 -   [throttle （节流）](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L14)
--   deepclone（实现一个深度克隆）
--   eventBus （实现一个事件系统的 on 监听函数和 emit 发送事件的函数）
--   用 xmlhttprequest 实现一个 promise 的 ajax
--   memolize （返回一个可存储函数结构的函数）
--   promisy(将一个函数转化为 promise 的使用)
--   curry （函数式编程柯里化）
--   retry （重试发一个 ajax，失败的时候会自动重试）
+-   [deepclone（实现一个深度克隆）](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L68)
+-   [memolize （返回一个可存储函数执行结果的函数）](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L25)
+-   [promisy(将一个函数转化为 promise 的使用)](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L46)
+-   [currying （函数式编程柯里化）](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L57)
 
 ### 异步控制
 
+-   retry （重试发一个 ajax，失败的时候会自动重试）
+-   用 XMLHttpRequest 实现一个 promise 的 ajax
 -   实现一个 sleep 函数
 -   series 流程控制，顺序执行两个 callback
 -   parallel 并行执行两个 callback
 -   waterfall 串行执行有参数传递
--   scheduleTask(实现一个同时执行若干个任务的调度任务器)
--   LazyMan （微信经典面试题 lazyman）
+-   [scheduleTask(实现一个同时执行若干个任务的调度任务器)](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/schedule.js#L9)
+-   [LazyMan Promise 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman-promise.js#L6)
+-   [LazyMan 普通 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman.js#L5)
+-   [eventBus （实现一个事件系统的 on 监听函数和 emit 发送事件的函数）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/event-bus.js#L12)
 
 ### 浏览器和其他
 
