@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "rollup -c -w",
-        "test": "ava test/flattern.js "
+        "test": "ava test/array.js "
     },
     "author": "fan.zhang",
     "license": "ISC",
