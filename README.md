@@ -34,14 +34,15 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 ### 语言特性
 
--   bind （实现 function 的 bind）
--   call （实现 function 的 call）
--   apply（实现 function 的 apply）
--   instanOf（实现 instanceOf）
--   new 实现一个 new 函数
--   实现一个继承
--   实现一个 JSON.parse
--   promise（实现一个 promise)
+-   [bind （实现 function 的 bind）](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L1)
+-   [call （实现 function 的 call)](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L12)
+-   [apply（实现 function 的 apply）](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L16)
+-   [instanOf（实现 instanceOf）](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L20)
+-   [new 实现一个 new 函数](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L32)
+-   [实现一个继承](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L41)
+-   [实现一个 JSON.parse](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L76)
+-   [实现一个 JSON.stringify](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L112)
+-   [promise（实现一个 promise)](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/my-promise.js#L1)
 -   格式化数组数字
 -   用 ES5 实现一个 ES6 的 class
 

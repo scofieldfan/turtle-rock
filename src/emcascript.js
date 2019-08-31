@@ -95,7 +95,6 @@ function JSONParse(strs) {
                 //}
             }
         }
-        console.log("prase:", obj);
         return obj;
     }
     if (strs[0] === "[") {
