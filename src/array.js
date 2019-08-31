@@ -43,22 +43,22 @@ const quickSort = function(ary = [], start = 0, end = ary.length - 1) {
     if (!Array.isArray(ary)) {
         throw new TypeError("arg1 is not a array");
     }
-    if (start >= end) {
+    if (start >= end || isNaN(start) || isNaN(end)) {
         return;
     }
-    let index = partition(ary, start, end);
+    let index = partition(start, end);
     quickSort(ary, start, index - 1);
     quickSort(ary, index + 1, end);
     function partition(left, right) {
         let priviot = ary[right];
-        let start = left - 1;
+        let k = left - 1;
         for (let i = left; i <= right - 1; i++) {
-            if (ary[i] < priviot) {
-                swap(++start, i);
+            if (ary[i] <= priviot) {
+                swap(++k, i);
             }
         }
-        swap(++start, right);
-        return start;
+        swap(++k, right);
+        return k;
     }
     function swap(i, j) {
         let temp = ary[i];

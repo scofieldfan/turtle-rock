@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "rollup -c -w",
-        "test": "ava test/my-promise.js "
+        "test": "ava test/*.js "
     },
     "author": "fan.zhang",
     "license": "ISC",
