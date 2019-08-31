@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "rollup -c -w",
-        "test": "ava test/array.js "
+        "test": "ava test/my-promise.js "
     },
     "author": "fan.zhang",
     "license": "ISC",
@@ -17,5 +17,8 @@
         "rollup-plugin-babel": "^4.3.3",
         "rollup-plugin-multi-entry": "^2.1.0",
         "rollup-plugin-postcss": "^2.0.3"
+    },
+    "ava": {
+        "failWithoutAssertions": false
     }
 }

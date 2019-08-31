@@ -18,13 +18,19 @@ turtle 系列本着这个原则，复习所有相关领域的知识。慢就是�
    npm run test // 运行测试测试
 ```
 
-turtle-rock 是前端 Javascript 一些小程序的集合，方便理解 JS 里的一些语言特性，和异步。
+turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便理解 JS 里的一些语言特性，和异步。
+
+```
+作为一个FE，不要排斥算法，不要自己把自己的要求降低，对于基础算法的自己不要放低要求自己，其实对于一些基础算法，也不是非常难。只要像turtle一样，不停的努力就可以了！
+```
 
 ### Array
 
--   flush
--   flattern
--   二分查找
+-   [flattern 数组展平](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L1)
+-   [flush 将数组乱序](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L16)
+-   [binarySearch 二分查找](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L24)
+-   [qsort 快速排序](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L42)
+-   [twosum  两数之和](https://github.com/scofieldfan/turtle-rock/blob/75e703a38ba64c8478114b16ad200703c377fec9/src/array.js#L69)
 
 ### 语言特性
 
@@ -33,11 +39,11 @@ turtle-rock 是前端 Javascript 一些小程序的集合，方便理解 JS 里�
 -   apply（实现 function 的 apply）
 -   instanOf（实现 instanceOf）
 -   new 实现一个 new 函数
--   实现一个 JSON.parse
 -   实现一个继承
--   用 ES5 实现一个 ES6 的 class
+-   实现一个 JSON.parse
 -   promise（实现一个 promise)
 -   格式化数组数字
+-   用 ES5 实现一个 ES6 的 class
 
 ### 工具类
 

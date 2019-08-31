@@ -49,21 +49,21 @@ const quickSort = function(ary = [], start = 0, end = ary.length - 1) {
     let index = partition(ary, start, end);
     quickSort(ary, start, index - 1);
     quickSort(ary, index + 1, end);
-    function partition(pAry, left, right) {
-        let priviot = pAry[right];
+    function partition(left, right) {
+        let priviot = ary[right];
         let start = left - 1;
         for (let i = left; i <= right - 1; i++) {
-            if (pAry[i] < priviot) {
-                swap(pAry, ++start, i);
+            if (ary[i] < priviot) {
+                swap(++start, i);
             }
         }
-        swap(pAry, ++start, right);
+        swap(++start, right);
         return start;
     }
-    function swap(sAry, i, j) {
-        let temp = sAry[i];
-        sAry[i] = sAry[j];
-        sAry[j] = temp;
+    function swap(i, j) {
+        let temp = ary[i];
+        ary[i] = ary[j];
+        ary[j] = temp;
     }
 };
 const twoSum = function(arys, target) {

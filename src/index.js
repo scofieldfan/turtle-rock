@@ -1,5 +1,4 @@
 const util = {
-
     debounce(fun, delay, immediate) {
         let timer = null;
         return (...args) => {
@@ -10,8 +9,7 @@ const util = {
                     fun.apply(this, args);
                 }, delay);
             }
-        }
-
+        };
     },
     throttle(fun, delay, immediate) {
         let flag = false;
@@ -23,7 +21,7 @@ const util = {
                     flag = false;
                 }, delay);
             }
-        }
+        };
     },
     memeorize(fun) {
         let cache = {};
@@ -35,16 +33,16 @@ const util = {
             let value = fun.apply(this, args);
             cache[key] = value;
             return value;
-        }
+        };
     },
     log(fun) {
         return (...args) => {
             let start = new Date().getTime();
-            const value = fun.apply(this, args)
+            const value = fun.apply(this, args);
             let end = new Date().getTime();
-            console.log('invoke.. time cost:', value);
+            console.log("invoke.. time cost:", value);
             return value;
-        }
+        };
     },
     promisy(fun) {
         return (...args) => {
@@ -54,46 +52,22 @@ const util = {
                 } catch (e) {
                     reject(e);
                 }
-            })
-        }
-
+            });
+        };
     },
     currying(fun) {
-
         function helper(fn, ...arg1) {
             let length = fn.length;
             let self = this;
-            return function (...arg2) {
+            return function(...arg2) {
                 let arg = arg1.concat(arg2);
                 if (arg.length < length) {
                     return helper.call(self, fn, ...arg);
                 }
                 return fn.apply(this, arg);
-            }
+            };
         }
         return helper(fun);
-
-    },
-    flatten(array) {
-
-        /*[2,3,[2]] */
-        /* [[3,4,5],[2,3],[[3,4],6]] */
-        function helper(ary) {
-            let ret = [];
-            if (Object.prototype.toString.call(array).slice(8, -1) === "Array") {
-                ary.forEach((item) => {
-                    if (Object.prototype.toString.call(item).slice(8, -1) === "Array") {
-                        ret = ret.concat(helper(item));
-                    } else {
-                        ret.push(item);
-                    }
-                })
-            } else {
-                ret.push(ary);
-            }
-            return ret;
-        }
-        return helper(array);
     },
 
     timer(minute, second) {
@@ -150,7 +124,7 @@ const util = {
             return "error";
         }
         if (timestamp >= now - minute) {
-            return "1分钟内"
+            return "1分钟内";
         }
         if (timestamp >= now - hour) {
             let m = Math.floor((now - timestamp) / minute);
@@ -165,10 +139,6 @@ const util = {
             return `${d}天前`;
         }
         return new Date(timestamp).toLocaleString();
-
     }
-
-}
-export {
-    util
-}
+};
+export { util };
