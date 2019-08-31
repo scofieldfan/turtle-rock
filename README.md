@@ -48,8 +48,8 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 ### 工具类
 
--   debounce （防抖）
--   throttle （节流）
+-   [debounce （防抖）](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L2)
+-   [throttle （节流）](https://github.com/scofieldfan/turtle-rock/blob/e4598498e434836d0dcf0a40f1408d4ca02b73fc/src/util.js#L14)
 -   deepclone（实现一个深度克隆）
 -   eventBus （实现一个事件系统的 on 监听函数和 emit 发送事件的函数）
 -   用 xmlhttprequest 实现一个 promise 的 ajax
