@@ -15,7 +15,7 @@ turtle 系列本着这个原则，复习所有相关领域的知识。慢就是�
 ```
    npm install // 安装依赖
    npm run build // 项目打包
-   npm run test // 运行测试测试
+   npm run test // 运行测试用例
 ```
 
 turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便理解 JS 里的一些语言特性，和异步。
@@ -57,10 +57,10 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 ### 异步控制
 
--   [retry （重试发一个 ajax，失败的时候会自动重试）](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L11)
+-   [retry （重试发一个 ajax，失败的时候会自动重试）](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L18)
 -   [用 XMLHttpRequest 实现一个 promise 的 ajax](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L25)
--   [实现一个 sleep 函数](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L12)
--   [series 流程控制，顺序执行两个 callback](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L12)
+-   [实现一个 sleep 函数](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L10)
+-   [series 流程控制，顺序执行两个 callback](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L1)
 -   parallel 并行执行两个 callback
 -   waterfall 串行执行有参数传递
 -   [scheduleTask(实现一个同时执行若干个任务的调度任务器)](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/schedule.js#L9)
@@ -72,8 +72,8 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 -   实现 JSONP
 -   实现双向绑定
--   获取所有 dom 的元素节点
--   template 替换方法
+-   [获取所有 dom 的元素节点](https://github.com/scofieldfan/turtle-rock/blob/b31c5d43b05986101861054dd15626cb234f88da/src/dom.js#L4)
+-   [template 替换方法](https://github.com/scofieldfan/turtle-rock/blob/b31c5d43b05986101861054dd15626cb234f88da/src/dom.js#L1)
 
 ### 高频算法
 
