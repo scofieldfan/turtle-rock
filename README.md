@@ -34,15 +34,15 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 ### 语言特性
 
--   [bind （实现 function 的 bind）](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L1)
--   [call （实现 function 的 call)](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L12)
--   [apply（实现 function 的 apply）](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L16)
--   [instanOf（实现 instanceOf）](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L20)
--   [new 实现一个 new 函数](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L32)
+-   [实现 function 的 bind](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L1)
+-   [实现 function 的 call](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L12)
+-   [实现 function 的 apply](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L16)
+-   [实现 instanceOf](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L20)
+-   [实现一个 new 函数](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L32)
 -   [实现一个继承](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L41)
 -   [实现一个 JSON.parse](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L76)
 -   [实现一个 JSON.stringify](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/emcascript.js#L112)
--   [promise（实现一个 promise)](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/my-promise.js#L1)
+-   [实现一个 promise](https://github.com/scofieldfan/turtle-rock/blob/155d58a98315710a44b7a0241daa1ad9d4f38364/src/my-promise.js#L1)
 -   格式化数组数字
 -   用 ES5 实现一个 ES6 的 class
 
@@ -57,10 +57,10 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 ### 异步控制
 
--   retry （重试发一个 ajax，失败的时候会自动重试）
--   用 XMLHttpRequest 实现一个 promise 的 ajax
--   实现一个 sleep 函数
--   series 流程控制，顺序执行两个 callback
+-   [retry （重试发一个 ajax，失败的时候会自动重试）](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L11)
+-   [用 XMLHttpRequest 实现一个 promise 的 ajax](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L25)
+-   [实现一个 sleep 函数](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L12)
+-   [series 流程控制，顺序执行两个 callback](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L12)
 -   parallel 并行执行两个 callback
 -   waterfall 串行执行有参数传递
 -   [scheduleTask(实现一个同时执行若干个任务的调度任务器)](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/schedule.js#L9)
@@ -74,3 +74,17 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 -   实现双向绑定
 -   获取所有 dom 的元素节点
 -   template 替换方法
+
+### 高频算法
+
+-   MinStack
+-   MaxStack
+-   LRUCache
+-   两个有序数组求中位数
+-   数据流里求中位数
+-   求一个集合的子集
+-   搜索旋转排序数组
+-   二叉搜索树转链表
+-   三数之和
+-   合并 K 个排序链表
+-   编辑距离

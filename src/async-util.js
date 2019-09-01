@@ -7,6 +7,13 @@ function series(tasks, callback) {
     }
     callback(result);
 }
+function sleep(time) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, time);
+    });
+}
 
 function retryAjax(url, num = 1) {
     if (num <= 0) {
@@ -84,7 +91,8 @@ const asyncUtil = {
     retryAjax,
     myRequest,
     cacheRequest,
-    sendParallel
+    sendParallel,
+    sleep
 };
 
 export { asyncUtil, retryAjax };

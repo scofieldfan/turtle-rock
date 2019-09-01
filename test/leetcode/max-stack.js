@@ -1,8 +1,6 @@
-
-import { maxStack } from '../lib/turtle.js';
-import test from 'ava';
-test('stack', t => {
-
+import { maxStack } from "../../../lib/turtle.js";
+import test from "ava";
+test("stack", t => {
     let myStack = new maxStack();
     myStack.push(2);
     t.is(myStack.getMax(), 2);
