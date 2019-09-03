@@ -1,15 +1,19 @@
-var myInstance = (function() {
-    var privateVar = "";
+var Singleton = (function() {
+    var instance;
 
-    function privateMethod() {}
+    function createInstance() {
+        var object = new Object("I am the instance");
+        return object;
+    }
 
     return {
-        // public interface
-        publicMethod1: function() {
-            // all private members are accesible here
-        },
-        publicMethod2: function() {}
+        getInstance: function() {
+            if (!instance) {
+                instance = createInstance();
+            }
+            return instance;
+        }
     };
 })();
 
-export { myInstance };
+export { Singleton };
