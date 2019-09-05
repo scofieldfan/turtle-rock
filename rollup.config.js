@@ -1,24 +1,48 @@
-import babel from 'rollup-plugin-babel';
-import postcss from 'rollup-plugin-postcss';
+import babel from "rollup-plugin-babel";
+import postcss from "rollup-plugin-postcss";
 import multiEntry from "rollup-plugin-multi-entry";
 
 export default [
     {
-        file: 'lib/turtle.js',
-        format: 'cjs',
+        file: "lib/turtle.js",
+        format: "cjs"
     },
     {
-        file: 'lib/turtle.m.js',
-        format: 'esm',
+        file: "lib/turtle.m.js",
+        format: "esm"
     }
 ].map(output => ({
-    input: 'src/*.js',
+    input: "src/*.js",
     output,
     plugins: [
         babel({
-            presets: ['@babel/preset-env'],
+            runtimeHelpers: true,
+            presets: [
+                [
+                    "@babel/preset-env",
+                    {
+                        modules: false,
+                        targets: {
+                            browsers: [
+                                "> 1%",
+                                "last 2 versions",
+                                "not ie <= 8"
+                            ],
+                            node: "current"
+                        }
+                    }
+                ]
+            ],
+            plugins: [
+                [
+                    "@babel/plugin-transform-runtime",
+                    {
+                        regenerator: true
+                    }
+                ]
+            ]
         }),
         postcss({ extract: !0 }), // 构建样式文件时需要这个插件
         multiEntry()
-    ],
+    ]
 }));

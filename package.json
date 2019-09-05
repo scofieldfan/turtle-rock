@@ -11,8 +11,11 @@
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.5.5",
+        "@babel/plugin-transform-runtime": "^7.5.5",
         "@babel/preset-env": "^7.5.5",
+        "@babel/runtime": "^7.5.5",
         "ava": "^2.2.0",
+        "babel-polyfill": "^6.26.0",
         "rollup": "^1.19.4",
         "rollup-plugin-babel": "^4.3.3",
         "rollup-plugin-multi-entry": "^2.1.0",
@@ -20,5 +23,8 @@
     },
     "ava": {
         "failWithoutAssertions": false
+    },
+    "dependencies": {
+        "core-js": "^3.2.1"
     }
 }
