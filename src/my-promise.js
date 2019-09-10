@@ -20,6 +20,35 @@ export function MyPromise(executor) {
     );
 }
 
+MyPromise.all = function(tasks = []) {
+    return new Promise((resolve, reject) => {
+        let result = [];
+        let successNum = 0;
+        let failNum = 0;
+        for (let i = 0; i < tasks.length; i++) {
+            tasks
+                .then(res => {
+                    result[i] = res;
+                    successNum++;
+                    checkResult();
+                })
+                .catch(err => {
+                    result[i] = err;
+                    failNum++;
+                    checkResult();
+                });
+        }
+        function checkResult() {
+            if (successNum + failNum === tasks.length) {
+                if (successNum === tasks.length) {
+                    resolve(...result);
+                } else {
+                    reject(...result);
+                }
+            }
+        }
+    });
+};
 MyPromise.prototype.then = function(onSuccess, onFail) {
     let callback = null;
     if (this.state === "resolved") {
