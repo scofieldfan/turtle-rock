@@ -77,10 +77,10 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 ### 高频算法
 
--   MinStack
--   MaxStack
+-   [MinStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/max-stack.js#L1)
+-   [MaxStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/min-stack.js#L1)
 -   LRUCache
--   两个有序数组求中位数
+-   [两个有序数组求中位数](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/number.js#L1)
 -   数据流里求中位数
 -   求一个集合的子集
 -   搜索旋转排序数组
@@ -90,3 +90,4 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 -   编辑距离
 -   [旋转矩阵](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/spiral-matrix.js#L1)
 -   [实现 Trie 树](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/trie.js#L1)
+-   [前 K 个高频元素](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/top-k-frequent.js#L2)
