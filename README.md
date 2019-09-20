@@ -61,12 +61,12 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 -   [用 XMLHttpRequest 实现一个 promise 的 ajax](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L25)
 -   [实现一个 sleep 函数](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L10)
 -   [series 流程控制，顺序执行两个 callback](https://github.com/scofieldfan/turtle-rock/blob/5ab0efce0fc8017a8367a3a96d4495787ff8f162/src/async-util.js#L1)
--   parallel 并行执行两个 callback
--   waterfall 串行执行有参数传递
 -   [scheduleTask(实现一个同时执行若干个任务的调度任务器)](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/schedule.js#L9)
 -   [lazyMan Promise 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman-promise.js#L6)
 -   [lazyMan 普通 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman.js#L5)
 -   [eventBus （实现一个事件系统的 on 监听函数和 emit 发送事件的函数）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/event-bus.js#L12)
+-   parallel 并行执行两个 callback
+-   waterfall 串行执行有参数传递
 
 ### 浏览器和其他
 
@@ -81,20 +81,20 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 
 -   [p4-两个有序数组求中位数](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/number.js#L1)
 -   [p54-旋转矩阵](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/spiral-matrix.js#L1)
--   [p109-有序链表转二叉搜索树]
--   [p150-逆波兰式求值]
--   [p155-MinStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/max-stack.js#L1)
+-   [p109-有序链表转二叉搜索树](https://github.com/scofieldfan/turtle-rock/blob/7a23612d649047b068b2f036dbfd7106c63fcba8/src/leetcode/p109-sort-list-bst.js#L14)
+-   [p150-逆波兰式求值](https://github.com/scofieldfan/turtle-rock/blob/master/src/leetcode/p150-expression.js)
+-   [p155-MinStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/min-stack.js#L1)
 -   [p208-实现 Trie 树](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/trie.js#L1)
 -   [p215-前 K 个高频元素](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/top-k-frequent.js#L2)
--   [p216-组合总和 III]()
--   [p328 奇偶链表]()
--   [p341 数组 flattern]()
--   [p347 前 K 个最大频率的书]()
--   [p716-MaxStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/min-stack.js#L1)
+-   [p216-组合总和 III](https://github.com/scofieldfan/turtle-rock/blob/master/src/leetcode/p216-combationsum.js)
+-   [p328 奇偶链表](https://github.com/scofieldfan/turtle-rock/blob/master/src/leetcode/p328-odd-even.js)
+-   [p341 数组 flattern](https://github.com/scofieldfan/turtle-rock/blob/7a23612d649047b068b2f036dbfd7106c63fcba8/src/leetcode/p341-flattern.js#L35)
+-   [p347 前 K 个最大频率的数](https://github.com/scofieldfan/turtle-rock/blob/7a23612d649047b068b2f036dbfd7106c63fcba8/src/leetcode/p347-top-k-frequent.js#L6)
+-   [p716-MaxStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/max-stack.js#L1)
 
+-   求一个集合的子集
 -   LRUCache
 -   数据流里求中位数
--   求一个集合的子集
 -   搜索旋转排序数组
 -   二叉搜索树转链表
 -   三数之和
