@@ -64,8 +64,8 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 -   parallel 并行执行两个 callback
 -   waterfall 串行执行有参数传递
 -   [scheduleTask(实现一个同时执行若干个任务的调度任务器)](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/schedule.js#L9)
--   [LazyMan Promise 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman-promise.js#L6)
--   [LazyMan 普通 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman.js#L5)
+-   [lazyMan Promise 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman-promise.js#L6)
+-   [lazyMan 普通 版本 （微信经典面试题 lazyman）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/lazyman.js#L5)
 -   [eventBus （实现一个事件系统的 on 监听函数和 emit 发送事件的函数）](https://github.com/scofieldfan/turtle-rock/blob/dbf14464c570f829f07002c3aaffc442fc1d419f/src/event-bus.js#L12)
 
 ### 浏览器和其他
@@ -73,21 +73,29 @@ turtle-rock 是前端 Javascript 一些小程序和算法的的集合，方便�
 -   实现 JSONP
 -   实现双向绑定
 -   [获取所有 dom 的元素节点](https://github.com/scofieldfan/turtle-rock/blob/b31c5d43b05986101861054dd15626cb234f88da/src/dom.js#L4)
--   [template 替换方法](https://github.com/scofieldfan/turtle-rock/blob/b31c5d43b05986101861054dd15626cb234f88da/src/dom.js#L1)
+-   [template 替换方法](https://github.com/scofieldfan/turtle-rock/blob/b42e142b22db51e83ce7e3b92748637d66e57f9d/src/dom.js#L1)
 
 ### 高频算法
 
--   [MinStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/max-stack.js#L1)
--   [MaxStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/min-stack.js#L1)
+下面按照 leetcode 的题顺序来列举算法
+
+-   [p4-两个有序数组求中位数](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/number.js#L1)
+-   [p54-旋转矩阵](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/spiral-matrix.js#L1)
+-   [p109-有序链表转二叉搜索树]
+-   [p150-逆波兰式求值]
+-   [p155-MinStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/max-stack.js#L1)
+-   [p208-实现 Trie 树](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/trie.js#L1)
+-   [p215-前 K 个高频元素](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/top-k-frequent.js#L2)
+-   [p216-组合总和 III]()
+-   [p328 奇偶链表]()
+-   [p341 数组 flattern]()
+-   [p347 前 K 个最大频率的书]()
+-   [p716-MaxStack](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/min-stack.js#L1)
+
 -   LRUCache
--   [两个有序数组求中位数](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/number.js#L1)
 -   数据流里求中位数
 -   求一个集合的子集
 -   搜索旋转排序数组
 -   二叉搜索树转链表
 -   三数之和
 -   合并 K 个排序链表
--   编辑距离
--   [旋转矩阵](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/spiral-matrix.js#L1)
--   [实现 Trie 树](https://github.com/scofieldfan/turtle-rock/blob/ed74422c3775bcf99918246c4e2e4c175f9b8143/src/leetcode/trie.js#L1)
--   [前 K 个高频元素](https://github.com/scofieldfan/turtle-rock/blob/4086d477c104770a924d9c0f9b634639f0d5e302/src/leetcode/top-k-frequent.js#L2)
