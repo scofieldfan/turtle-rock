@@ -3,6 +3,7 @@ export function MyPromise(executor) {
     this.onFulfilledCallbacks = [];
     this.onRejectedCallbacks = [];
     executor(
+        //resolve函数
         data => {
             this.state = "resolved";
             this.value = data;
@@ -10,6 +11,7 @@ export function MyPromise(executor) {
                 callback(data);
             });
         },
+        //reject函数
         err => {
             this.state = "rejected";
             this.value = err;
@@ -20,8 +22,46 @@ export function MyPromise(executor) {
     );
 }
 
+function wrapCall(value, onSuccess, successCallback, failCallback) {
+    try {
+        successCallback(onSuccess(value));
+    } catch (error) {
+        failCallback(error);
+    }
+}
+MyPromise.prototype.then = function(onSuccess, onFail) {
+    let successCallback = null;
+    let failCallback = null;
+
+    if (this.state === "pending") {
+        this.onFulfilledCallbacks.push(res => {
+            wrapCall(res, onSuccess, successCallback, failCallback);
+        });
+        this.onRejectedCallbacks.push(error => {
+            if (onFail) {
+                wrapCall(error, onFail, successCallback, failCallback);
+            }
+        });
+    }
+
+    return new MyPromise((resolve, reject) => {
+        successCallback = data => {
+            resolve(data);
+        };
+        failCallback = error => {
+            reject(error);
+        };
+        if (this.state === "resolved") {
+            wrapCall(this.value, onSuccess, successCallback, failCallback);
+        }
+        if (this.state === "rejected") {
+            wrapCall(this.value, onFail, successCallback, failCallback);
+        }
+    });
+};
+
 MyPromise.all = function(tasks = []) {
-    return new Promise((resolve, reject) => {
+    return new MyPromise((resolve, reject) => {
         let result = [];
         let successNum = 0;
         let failNum = 0;
@@ -47,29 +87,5 @@ MyPromise.all = function(tasks = []) {
                 }
             }
         }
-    });
-};
-MyPromise.prototype.then = function(onSuccess, onFail) {
-    let callback = null;
-    if (this.state === "resolved") {
-        let newValue = onSuccess(this.value);
-        callback(newValue);
-    }
-    if (this.state === "pending") {
-        this.onFulfilledCallbacks.push(res => {
-            let newValue = onSuccess(res);
-            callback(newValue);
-        });
-        this.onRejectedCallbacks.push(error => {
-            onFail(error);
-        });
-    }
-    if (this.state === "rejected") {
-        onFail(this.value);
-    }
-    return new Promise((resolve, reject) => {
-        callback = data => {
-            resolve(data);
-        };
     });
 };
